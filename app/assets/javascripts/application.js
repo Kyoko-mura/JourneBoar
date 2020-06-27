@@ -11,6 +11,9 @@
 // about supported directives.
 //
 //= require rails-ujs
+<<<<<<< HEAD
 //= require activestorage
+=======
+>>>>>>> origin/master
 //= require turbolinks
 //= require_tree .

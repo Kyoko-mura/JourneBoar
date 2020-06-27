@@ -1,0 +1,21 @@
+<div class="gmap">
+  <h2>gmap</h2>
+
+  <input id="address" type="textbox" value="Sydney, NSW">
+  <input type="button" value="検索" onclick="codeAddress()">
+
+  <!-- 地図情報を保存するフォーム -->
+  <%= form_for @map do |f| %>
+  <!-- 検索値を隠しデータとして送信-->
+  <input type="hidden" name="map[address]" id="hidden_address">
+  <%= f.label :title, "タイトル" %>
+  <%= f.text_field :title %>
+  <%= f.label :comment, "コメント" %>
+  <%= f.text_field :comment %>
+  <%= f.submit "保存" %>
+  <% end %>
+  <div id='map'>
+  </div>
+  <%= render @maps %>
+</div>
+
