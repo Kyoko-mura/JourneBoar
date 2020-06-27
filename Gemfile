@@ -65,3 +65,19 @@ gem 'devise'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem 'kaminari','~> 1.1.1'
+gem 'mini_racer'
+gem 'acts-as-taggable-on', '~> 6.0'
+gem 'jquery-rails'
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+end
+group :development, :test do
+  gem 'hirb'
+  gem 'hirb-unicode'
+end
+gem "geocoder"
+gem 'http'
+gem 'openssl'

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title><%= page_title %></title>
     <%= csrf_meta_tags %>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -10,7 +11,22 @@
     <title>Meshiterro</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  </head> 
+    <style>
+      #map {
+        height: 400px;
+      }
+
+      .gmap input {
+        border: 1px solid #000;
+      }
+
+      .field_with_errors {
+        display: inline;
+      }
+    </style>
+
+
+  </head>
 
   <body>
 
@@ -36,7 +52,7 @@
                     <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
                   </li>
                   <li class="">
-                    <%= link_to '投稿フォーム', new_post_image_path %>
+                    <%= link_to '投稿フォーム', new_post_path %>
                   </li>
                   <li class="">
                     <!-- ↓以下のコードは、5章で正しいroutingに書き直します。 -->
@@ -55,7 +71,7 @@
         </div>
       </nav>
     </div>
-  
+
     <%= yield %>
 
    <footer class="footer style-2">
@@ -74,6 +90,5 @@
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
