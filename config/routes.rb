@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+
   get 'maps/index'
   get 'maps/create'
+
   #get 'users/show'
 	devise_for :users
 	root 'posts#index'
