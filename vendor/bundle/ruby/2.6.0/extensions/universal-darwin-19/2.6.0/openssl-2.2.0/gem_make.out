@@ -1,5 +1,5 @@
 current directory: /Users/kyoukomuraishi/Desktop/work/vagrant/JourneBoar/vendor/bundle/ruby/2.6.0/gems/openssl-2.2.0/ext/openssl
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200627-4682-1ok9459.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200628-23042-ak08c9.rb extconf.rb
 checking for t_open() in -lnsl... no
 checking for socket() in -lsocket... no
 checking for openssl/ssl.h... no
